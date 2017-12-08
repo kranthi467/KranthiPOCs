@@ -1,0 +1,6 @@
+{
+    "/api/*": "/$1",
+    "/:resource/:id/show": "/:resource/:id",
+    "/tasks/:name": "/tasks?name=:name",
+    "/taskbyid\\?:id": "/tasks/:id"
+}

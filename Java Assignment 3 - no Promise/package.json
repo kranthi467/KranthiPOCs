@@ -1,0 +1,11 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"start ToDo.html\" \"node Server.js\" \"json-server db.json --routes routes.json\" "
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "json-server": "^0.12.0"
+  }
+}

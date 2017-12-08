@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HttpMessageLogModelStoreContainer" CdmEntityContainer="HttpMessageLogEntities">
+    <EntitySetMapping Name="RequestsLogs">
+      <EntityTypeMapping TypeName="HttpMessageLogModel.RequestsLog">
+        <MappingFragment StoreEntitySet="RequestsLog">
+          <ScalarProperty Name="SNo" ColumnName="SNo" />
+          <ScalarProperty Name="RequestURL" ColumnName="RequestURL" />
+          <ScalarProperty Name="RequestMethod" ColumnName="RequestMethod" />
+          <ScalarProperty Name="Host" ColumnName="Host" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="Referer" ColumnName="Referer" />
+          <ScalarProperty Name="UserAgent" ColumnName="UserAgent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

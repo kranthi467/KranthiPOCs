@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HttpMessageLogModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="RequestsLog">
+    <Key>
+      <PropertyRef Name="SNo" />
+    </Key>
+    <Property Name="SNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RequestURL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="RequestMethod" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Host" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Origin" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Referer" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UserAgent" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="HttpMessageLogEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="RequestsLogs" EntityType="Self.RequestsLog" />
+  </EntityContainer>
+</Schema>

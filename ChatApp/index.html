@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chat App</title>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  </head>
+  <body>
+    <form id="messageForm">
+      <input id="message"/>
+      <button id="send">Send</button>
+    </form>
+    <ul id="messages"></ul>
+  </body>
+  <script>
+      var socket = io();
+      var messages = document.getElementById('messages');
+      var message = document.getElementById('message');
+      var send = document.getElementById('send');
+      // sending our message to server with 'emit' and server listens to the event 'sent to server'
+      send.onclick = function(){
+        socket.emit('sent to server', message.value);
+        message.value = '';
+        console.log('Message Sent')
+        return false;
+      }
+      // doing reverse as we are doing in above and listening to event 'listening from server'
+      socket.addEventListener('listening from server', function(msg){
+        var msgEle = document.createElement('li');
+        msgEle.textContent = msg;
+        messages.appendChild(msgEle);
+      });
+  </script>
+</html>

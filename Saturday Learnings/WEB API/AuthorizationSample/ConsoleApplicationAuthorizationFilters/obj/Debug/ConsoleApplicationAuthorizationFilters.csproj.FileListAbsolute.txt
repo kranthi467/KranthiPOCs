@@ -1,0 +1,6 @@
+c:\users\bhavitha.annam\documents\visual studio 2015\Projects\AuthorizationSample\ConsoleApplicationAuthorizationFilters\bin\Debug\ConsoleApplicationAuthorizationFilters.exe.config
+c:\users\bhavitha.annam\documents\visual studio 2015\Projects\AuthorizationSample\ConsoleApplicationAuthorizationFilters\bin\Debug\ConsoleApplicationAuthorizationFilters.exe
+c:\users\bhavitha.annam\documents\visual studio 2015\Projects\AuthorizationSample\ConsoleApplicationAuthorizationFilters\bin\Debug\ConsoleApplicationAuthorizationFilters.pdb
+c:\users\bhavitha.annam\documents\visual studio 2015\Projects\AuthorizationSample\ConsoleApplicationAuthorizationFilters\obj\Debug\ConsoleApplicationAuthorizationFilters.csprojResolveAssemblyReference.cache
+c:\users\bhavitha.annam\documents\visual studio 2015\Projects\AuthorizationSample\ConsoleApplicationAuthorizationFilters\obj\Debug\ConsoleApplicationAuthorizationFilters.exe
+c:\users\bhavitha.annam\documents\visual studio 2015\Projects\AuthorizationSample\ConsoleApplicationAuthorizationFilters\obj\Debug\ConsoleApplicationAuthorizationFilters.pdb

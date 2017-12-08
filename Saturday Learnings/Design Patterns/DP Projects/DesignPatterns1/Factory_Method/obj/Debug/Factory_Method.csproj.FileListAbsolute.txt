@@ -1,0 +1,1 @@
+C:\Users\kiran.singireddy\Documents\Visual Studio 2015\Projects\DesignPatterns\Factory_Method\obj\Debug\Factory_Method.csprojResolveAssemblyReference.cache

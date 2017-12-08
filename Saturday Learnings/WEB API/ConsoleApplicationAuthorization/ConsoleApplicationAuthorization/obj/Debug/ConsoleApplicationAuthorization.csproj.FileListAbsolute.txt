@@ -1,0 +1,8 @@
+c:\users\bhavitha.annam\documents\visual studio 2015\Projects\ConsoleApplicationAuthorization\ConsoleApplicationAuthorization\bin\Debug\ConsoleApplicationAuthorization.exe.config
+c:\users\bhavitha.annam\documents\visual studio 2015\Projects\ConsoleApplicationAuthorization\ConsoleApplicationAuthorization\bin\Debug\ConsoleApplicationAuthorization.exe
+c:\users\bhavitha.annam\documents\visual studio 2015\Projects\ConsoleApplicationAuthorization\ConsoleApplicationAuthorization\bin\Debug\ConsoleApplicationAuthorization.pdb
+c:\users\bhavitha.annam\documents\visual studio 2015\Projects\ConsoleApplicationAuthorization\ConsoleApplicationAuthorization\obj\Debug\ConsoleApplicationAuthorization.exe
+c:\users\bhavitha.annam\documents\visual studio 2015\Projects\ConsoleApplicationAuthorization\ConsoleApplicationAuthorization\obj\Debug\ConsoleApplicationAuthorization.pdb
+C:\Users\bhavitha.annam\Desktop\WebApiSession\Bhavitha\ConsoleApplicationAuthorization\ConsoleApplicationAuthorization\bin\Debug\ConsoleApplicationAuthorization.exe.config
+C:\Users\bhavitha.annam\Desktop\WebApiSession\Bhavitha\ConsoleApplicationAuthorization\ConsoleApplicationAuthorization\obj\Debug\ConsoleApplicationAuthorization.exe
+C:\Users\bhavitha.annam\Desktop\WebApiSession\Bhavitha\ConsoleApplicationAuthorization\ConsoleApplicationAuthorization\obj\Debug\ConsoleApplicationAuthorization.pdb

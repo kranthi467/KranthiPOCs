@@ -1,0 +1,6 @@
+D:\Session Samples\WcfRestService\WcfRestService\bin\WcfRestService.dll.config
+D:\Session Samples\WcfRestService\WcfRestService\bin\WcfRestService.dll
+D:\Session Samples\WcfRestService\WcfRestService\bin\WcfRestService.pdb
+D:\Session Samples\WcfRestService\WcfRestService\obj\Debug\WcfRestService.csprojResolveAssemblyReference.cache
+D:\Session Samples\WcfRestService\WcfRestService\obj\Debug\WcfRestService.dll
+D:\Session Samples\WcfRestService\WcfRestService\obj\Debug\WcfRestService.pdb

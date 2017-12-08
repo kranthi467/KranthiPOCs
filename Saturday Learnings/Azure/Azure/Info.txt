@@ -1,0 +1,37 @@
+Topics
+
+1.	IIS 
+a.	Hosting website in IIS
+b.	Application pools 
+
+2.	Azure
+a.	Web App
+b.	API App
+c.	Web Job & Worker Roles
+d.	Virtual Machine
+e.	SQL Database
+f.	Blob Storage, Queues and Document DB
+
+Assignments
+
+We have placed the following in the shared location (\\fileshare\Saturday Training\Content)
+a.	Asp.Net MVC (project source code & binaries)
+b.	SQL DB Scripts
+
+Assignment 1:
+
+a.	Create SQL database and deploy the provided scripts.
+b.	Deploy shared Asp.Net MVC app into Azure web app and configure the connection string in web.config file to point the created DB
+1.	Using visual studio
+2.	Using project binaries
+     c. Validate the deployed application
+
+Assignment 2:
+
+Create an mobile/web/windows application(in your desired technology) to read images(jpg/png) and upload the images to Azure blob storage
+
+Note:
+
+•	Assignments should be completed by 21st October
+•	Please take screenshots of the deployed applications and place them in the file share for our reference.
+•	Please create your own Azure account as it is free for 1 month. You need to provide credit card details in the process of registering but they will not charge anything without your approval. here is the link https://azure.microsoft.com/en-in/free/

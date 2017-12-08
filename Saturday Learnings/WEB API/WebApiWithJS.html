@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    
+        <button onclick="GetData()">Get</button>
+        <button onclick="PostData()">Post</button><br>
+        <p id="demo"></p>
+    
+    
+    <script>
+                         function GetData() {
+                             var request = new XMLHttpRequest();
+                             request.open("GET", "http://localhost:64619//api/sample", true);
+                             request.onreadystatechange = function () {
+                                 if (request.readyState == 4) {
+                                     document.getElementById("demo").innerHTML = request.responseText;
+                                 }
+                             };
+
+                             request.send();
+                         }
+
+                         function PostData() {
+                             var request = new XMLHttpRequest();
+                             request.open("POST", "http://localhost:64619/api/sample", true);
+                             request.onreadystatechange = function () {
+                               
+                                 if (this.readyState == 4) {
+
+                                     document.getElementById("demo").innerHTML = this.responseText;
+                                 }
+                             };
+
+                                request.setRequestHeader("content-type","application/json");
+                             var id =parseInt( prompt("enter id"));
+                             var name=prompt("enter name");
+                             var age=parseInt(prompt("enter age"));
+                             var obj={
+                                 ID:id,
+                                 Name:name,
+                                  Age:age
+                             }
+                             request.send(JSON.stringify(obj));
+                         }
+    </script>
+
+</body>
+
+</html>

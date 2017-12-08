@@ -1,0 +1,1 @@
+C:\Users\kiran.singireddy\Documents\Visual Studio 2015\Projects\DesignPatterns\Abstruct_FactoryPattern\obj\Debug\Abstruct_FactoryPattern.csprojResolveAssemblyReference.cache

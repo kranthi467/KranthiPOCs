@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Chat App</title>
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+</head>
+
+<body>
+  <div>
+    <ul id="users"></ul>
+  </div>
+  <div>
+    <form id="messageForm">
+      <input type="text" id="message" />
+      <input type="button" id="send" value="Send"/>
+    </form>
+    <ul id="messages"></ul>
+  </div>
+
+
+</body>
+<script>
+  // var xmlhttp = new XMLHttpRequest();
+  // xmlhttp.open("GET", "http://localhost:3000/js", true);
+  // xmlhttp.send();
+
+  var socket = (function () {
+    var _instance;
+    return {
+      getInstance: function () {
+        if (!_instance) {
+          _instance = io();
+        }
+        return _instance;
+      },
+      sendMsg: 'sent to server',
+      listenMsg: 'listening from server',
+      sendUser: 'register at server',
+      listenUsers: 'update users',
+      removeUser: 'remove from server',
+      sender: function (emitTo, message) {
+        return function () {
+          socket.getInstance().emit(emitTo, message.value);
+          message.value = '';
+          console.log('Message Sent');
+        }
+      },
+      reciever: function (messages) {
+        return function (msg) {
+          var msgEle = document.createElement('li');
+          msgEle.textContent = msg;
+          messages.appendChild(msgEle);
+        }
+      }
+    }
+  })();
+
+  var messages = document.getElementById('messages');
+  var message = document.getElementById('message');
+  var send = document.getElementById('send');
+
+  send.onclick = socket.sender(socket.sendMsg, message);
+  socket.getInstance().addEventListener(socket.listenMsg, socket.reciever(messages));
+
+  // // sending our message to server with 'emit' and server listens to the event 'sent to server'
+  // send.onclick = function () {
+  //   socket.getInstance().emit(socket.sendMsg, message.value);
+  //   message.value = '';
+  //   console.log('Message Sent')
+  //   return false;
+  // }
+  // // doing reverse as we are doing in above and listening to event 'listening from server'
+  // socket.getInstance().addEventListener(socket.listenMsg, function (msg) {
+  //   var msgEle = document.createElement('li');
+  //   msgEle.textContent = msg;
+  //   messages.appendChild(msgEle);
+  // });
+</script>
+
+</html>
