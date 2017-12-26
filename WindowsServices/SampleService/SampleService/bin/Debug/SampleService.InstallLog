@@ -1,0 +1,69 @@
+﻿Installing assembly 'C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.InstallLog
+   assemblypath = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe
+   logtoconsole = 
+Installing service SampleService...
+Service SampleService has been successfully installed.
+Creating EventLog source SampleService in log Application...
+Committing assembly 'C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.InstallLog
+   assemblypath = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe
+   logtoconsole = 
+Uninstalling assembly 'C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.InstallLog
+   assemblypath = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe
+Removing EventLog source SampleService.
+Service SampleService is being removed from the system...
+Service SampleService was successfully removed from the system.
+Installing assembly 'C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.InstallLog
+   assemblypath = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe
+   logtoconsole = 
+Installing service SampleService...
+Service SampleService has been successfully installed.
+Creating EventLog source SampleService in log Application...
+Committing assembly 'C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.InstallLog
+   assemblypath = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe
+   logtoconsole = 
+Uninstalling assembly 'C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.InstallLog
+   assemblypath = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe
+Removing EventLog source SampleService.
+Service SampleService is being removed from the system...
+Service SampleService was successfully removed from the system.
+Installing assembly 'C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.InstallLog
+   assemblypath = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe
+   logtoconsole = 
+Installing service SampleService...
+Service SampleService has been successfully installed.
+Creating EventLog source SampleService in log Application...
+Committing assembly 'C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.InstallLog
+   assemblypath = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe
+   logtoconsole = 
+Uninstalling assembly 'C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.InstallLog
+   assemblypath = C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe
+Removing EventLog source SampleService.
+Service SampleService is being removed from the system...
+Service SampleService was successfully removed from the system.

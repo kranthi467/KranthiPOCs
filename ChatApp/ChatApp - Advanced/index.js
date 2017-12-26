@@ -7,10 +7,10 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
-// to fetch other required files
-app.get('/js', function (req, res) {
-  res.sendFile(__dirname + '/chat.js');
-});
+// // to fetch other required files
+// app.get('/js', function (req, res) {
+//   res.sendFile(__dirname + '/chat.js');
+// });
 
 io.on('connection', function (socket) {
   console.log('Connect with socket');

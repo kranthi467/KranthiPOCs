@@ -1,36 +1,39 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
-1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli [ 'C:\\Users\\kranthi.ramasayam\\Desktop\\Assembly\\emsdk\\node\\4.1.1_64bit\\bin\\node.exe',
+1 verbose cli   'C:\\Users\\kranthi.ramasayam\\Desktop\\Assembly\\emsdk\\node\\4.1.1_64bit\\bin\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'start' ]
-2 info using npm@3.10.10
-3 info using node@v6.11.0
+2 info using npm@2.14.4
+3 info using node@v4.1.1
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info lifecycle todo@1.0.0~prestart: todo@1.0.0
-6 silly lifecycle todo@1.0.0~prestart: no script for prestart, continuing
-7 info lifecycle todo@1.0.0~start: todo@1.0.0
-8 verbose lifecycle todo@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle todo@1.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\kranthi.ramasayam\Desktop\Java Assignment 3 - Copy\node_modules\.bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Program Files\SourceGear\Common\DiffMerge\;C:\Users\kranthi.ramasayam\AppData\Local\Microsoft\WindowsApps;C:\Users\kranthi.ramasayam\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin
-10 verbose lifecycle todo@1.0.0~start: CWD: C:\Users\kranthi.ramasayam\Desktop\Java Assignment 3 - Copy
-11 silly lifecycle todo@1.0.0~start: Args: [ '/d /s /c',
-11 silly lifecycle   'concurrently "start ToDo.html" "node Server.js" "json-server db.json --routes routes.json" ' ]
-12 verbose stack Error: kill ENOSYS
-12 verbose stack     at exports._errnoException (util.js:1018:11)
-12 verbose stack     at process.kill (internal/process.js:190:13)
-12 verbose stack     at process.listener (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
-12 verbose stack     at emitNone (events.js:91:20)
-12 verbose stack     at process.emit (events.js:185:7)
-12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
-12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
-12 verbose stack     at Signal.wrap.onsignal (internal/process.js:217:44)
-13 verbose cwd C:\Users\kranthi.ramasayam\Desktop\Java Assignment 3 - Copy
-14 error Windows_NT 10.0.15063
-15 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-16 error node v6.11.0
-17 error npm  v3.10.10
-18 error code ENOSYS
-19 error errno ENOSYS
-20 error syscall kill
-21 error kill ENOSYS
-22 error If you need help, you may report this error at:
-22 error     <https://github.com/npm/npm/issues>
-23 verbose exit [ 1, true ]
+5 info prestart todo@1.0.0
+6 info start todo@1.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info todo@1.0.0 Failed to exec start script
+9 verbose stack Error: todo@1.0.0 start: `concurrently -k "start ToDo.html" "node Server.js" "json-server db.json --routes routes.json" `
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (C:\Users\kranthi.ramasayam\Desktop\Assembly\emsdk\node\4.1.1_64bit\bin\node_modules\npm\lib\utils\lifecycle.js:214:16)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at EventEmitter.emit (events.js:172:7)
+9 verbose stack     at ChildProcess.<anonymous> (C:\Users\kranthi.ramasayam\Desktop\Assembly\emsdk\node\4.1.1_64bit\bin\node_modules\npm\lib\utils\spawn.js:24:14)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at ChildProcess.emit (events.js:172:7)
+9 verbose stack     at maybeClose (internal/child_process.js:817:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+10 verbose pkgid todo@1.0.0
+11 verbose cwd C:\Users\kranthi.ramasayam\Desktop\POCs\KranthiPOCs\Java Assignment 3 - Copy
+12 error Windows_NT 10.0.15063
+13 error argv "C:\\Users\\kranthi.ramasayam\\Desktop\\Assembly\\emsdk\\node\\4.1.1_64bit\\bin\\node.exe" "C:\\Users\\kranthi.ramasayam\\Desktop\\Assembly\\emsdk\\node\\4.1.1_64bit\\bin\\node_modules\\npm\\bin\\npm-cli.js" "start"
+14 error node v4.1.1
+15 error npm  v2.14.4
+16 error code ELIFECYCLE
+17 error todo@1.0.0 start: `concurrently -k "start ToDo.html" "node Server.js" "json-server db.json --routes routes.json" `
+17 error Exit status 1
+18 error Failed at the todo@1.0.0 start script 'concurrently -k "start ToDo.html" "node Server.js" "json-server db.json --routes routes.json" '.
+18 error This is most likely a problem with the todo package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     concurrently -k "start ToDo.html" "node Server.js" "json-server db.json --routes routes.json"
+18 error You can get their info via:
+18 error     npm owner ls todo
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]

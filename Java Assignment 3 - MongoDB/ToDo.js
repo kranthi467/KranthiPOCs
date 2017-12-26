@@ -9,9 +9,9 @@ var Task = (function () {
 
 var taskArray = [];
 var _tags = [];
-var _editMode = { isEdit:false, task:{} };
+var _editMode = { isEdit: false, task: {} };
 
-document.onreadystatechange = function(){
+document.onreadystatechange = function () {
     showpending = document.getElementById('showpending');
     tbody = document.getElementById('displaybody');
     tagElement = document.getElementById('tags');
@@ -22,9 +22,9 @@ document.onreadystatechange = function(){
     search = document.getElementById("search");
 }
 
-var addTag = function() {
+var addTag = function () {
     var tag = tagElement.value;
-    if(canAddTag(tag)){
+    if (canAddTag(tag)) {
         _tags.push(tag);
         var tagX = document.createElement('a');
         tagX.setAttribute("class", "mr-1 ml-1");
@@ -34,18 +34,18 @@ var addTag = function() {
         tagLabel.textContent = tag + " ";
         tagsDisplay.appendChild(tagLabel);
         tagsDisplay.appendChild(tagX);
-        tagX.onclick = function(){
+        tagX.onclick = function () {
             removeTag(tag);
             tagsDisplay.removeChild(tagLabel);
             tagsDisplay.removeChild(tagX);
         }
-        tagElement.value="";
+        tagElement.value = "";
     }
 }
 
-var removeTag = function(tag) {
-    _tags.forEach((value, index)=>{
-        if(value == tag){
+var removeTag = function (tag) {
+    _tags.forEach((value, index) => {
+        if (value == tag) {
             _tags.splice(index, 1);
         }
     });
@@ -57,32 +57,32 @@ var removeTags = function () {
     removeAllChildNodes(tagsDisplay);
 }
 
-var removeAllChildNodes=function(_Node){
-    for(var i=_Node.childNodes.length - 1; i>=0; i--){
+var removeAllChildNodes = function (_Node) {
+    for (var i = _Node.childNodes.length - 1; i >= 0; i--) {
         _Node.removeChild(_Node.firstChild);
     }
 }
 
-var canAddTag = function (p_tag){
+var canAddTag = function (p_tag) {
     var retVal = true;
-    if(_tags.length >= 3){
+    if (_tags.length >= 3) {
         errorTag.textContent = "Cannot add more than 3 tags";
         retVal = false;
     }
-    else if(p_tag == ""){
+    else if (p_tag == "") {
         errorTag.textContent = "Empty tags are not allowed";
         retVal = false;
     }
     else {
-        _tags.forEach((tag)=>{
-            if(tag == p_tag){
+        _tags.forEach((tag) => {
+            if (tag == p_tag) {
                 errorTag.textContent = "Tag already added";
-                retVal=false;
+                retVal = false;
             }
         });
     }
 
-    if(retVal){
+    if (retVal) {
         errorTag.textContent = "";
     }
     return retVal;
@@ -90,32 +90,32 @@ var canAddTag = function (p_tag){
 
 var addTask = function () {
     if (taskNameInput.value) {
-        if(_editMode.isEdit){
+        if (_editMode.isEdit) {
             task = _editMode.task;
             task.detail = taskNameInput.value;
             task.status = statusInput.value;
             task.tags = _tags;
             DoActionMongo(Action.Put, task)
-            .then(() => {
-                addTaskToList(task);
-                percentageReload();
-            });
+                .then(() => {
+                    addTaskToList(task);
+                    percentageReload();
+                });
             _editMode.isEdit = false;
         }
-        else{
+        else {
             task = new Task(taskNameInput.value, statusInput.value, _tags);
             DoActionMongo(Action.Post, task)
-            .then(task => {
-                taskArray.push(task);
-                addTaskToList(task);
-                percentageReload();
-            });
+                .then(task => {
+                    taskArray.push(task);
+                    addTaskToList(task);
+                    percentageReload();
+                });
         }
         taskNameInput.value = "";
         statusInput.value = 1;
         removeTags();
         errorTag.textContent = "";
-        
+
         percentageReload();
     }
     else {
@@ -123,26 +123,26 @@ var addTask = function () {
     }
 };
 
-var editModeStart = function(task){
-        _editMode.isEdit = true;
-        _editMode.task = task;
-        taskNameInput.value = task.detail;
-        statusInput.value = task.status;
-        task.tags.forEach((tag)=>{
-            tagElement.value = tag;
-            addTag();
-        });
-        tagElement.value="";
+var editModeStart = function (task) {
+    _editMode.isEdit = true;
+    _editMode.task = task;
+    taskNameInput.value = task.detail;
+    statusInput.value = task.status;
+    task.tags.forEach((tag) => {
+        tagElement.value = tag;
+        addTag();
+    });
+    tagElement.value = "";
 };
 
 var addTaskToList = function (task) {
-    if(trow = document.getElementById("trow"+task._id)){
+    if (trow = document.getElementById("trow" + task._id)) {
         removeAllChildNodes(trow);
     }
-    else{
+    else {
         trow = document.createElement('tr');
-        trow.setAttribute("id", "trow"+task._id);
-        
+        trow.setAttribute("id", "trow" + task._id);
+
         tbody.appendChild(trow);
     }
 
@@ -152,7 +152,7 @@ var addTaskToList = function (task) {
     tdataCompleted.appendChild(completed);
     trow.appendChild(tdataCompleted);
 
-    var tdataTaskName =  document.createElement('td');
+    var tdataTaskName = document.createElement('td');
     tdataTaskName.textContent = task.detail;
     trow.appendChild(tdataTaskName);
 
@@ -161,46 +161,46 @@ var addTaskToList = function (task) {
     trow.appendChild(tdataTags);
 
     var tdataStatus = document.createElement('td');
-    if(task.status == 1){
+    if (task.status == 1) {
         tdataStatus.textContent = "Pending";
     }
-    else{
+    else {
         completed.checked = true;
         tdataStatus.textContent = "Completed";
     }
     trow.appendChild(tdataStatus);
-    
+
     var tdataActions = document.createElement('td');
     var editButton = document.createElement('button');
     editButton.setAttribute("class", "btn btn-primary p-1");
     editButton.textContent = "Edit";
-    editButton.onclick = function(){
+    editButton.onclick = function () {
         editModeStart(task);
     };
     tdataActions.appendChild(editButton);
     var deleteButton = document.createElement('button');
     deleteButton.setAttribute("class", "btn btn-danger p-1");
     deleteButton.textContent = "Delete";
-    deleteButton.onclick = function(){
+    deleteButton.onclick = function () {
         removeTaskByID(task._id);
     };
     tdataActions.appendChild(deleteButton);
     trow.appendChild(tdataActions);
-    
-    completed.onclick = function(){
-        if(task.status == 1){
+
+    completed.onclick = function () {
+        if (task.status == 1) {
             task.status = 2;
             tdataStatus.textContent = "Completed";
         }
-        else{
+        else {
             task.status = 1;
             tdataStatus.textContent = "Pending";
         }
         DoActionMongo(Action.Put, task)
-        .then(() => {
-            addTaskToList(task);
-            percentageReload();
-        });
+            .then(() => {
+                addTaskToList(task);
+                percentageReload();
+            });
     };
 };
 
@@ -216,29 +216,29 @@ var percentageReload = function () {
     });
     percent = (numerator / denominator) * 100;
     var progress = document.getElementById("progress").getElementsByTagName("td");
-    progress[1].textContent = denominator-numerator;
+    progress[1].textContent = denominator - numerator;
     progress[3].textContent = numerator;
-    progress[5].textContent = isNaN(percent) ? '0%' : percent.toFixed(2)+"%";
+    progress[5].textContent = isNaN(percent) ? '0%' : percent.toFixed(2) + "%";
     hidePendingAndSearch();
 };
 
-var hidePendingAndSearch = function(){
+var hidePendingAndSearch = function () {
     var trows = tbody.getElementsByTagName('tr');
-    for(var i=0; i<trows.length; i++){
+    for (var i = 0; i < trows.length; i++) {
         var checkbox = trows[i].getElementsByTagName('input');
         var taskname = trows[i].getElementsByTagName('td')[1].textContent;
         var searched = (taskname.indexOf(search.value) > -1);
         var showAndChecked = (showpending.checked && checkbox[0].checked);
-        if(!showAndChecked && searched){
+        if (!showAndChecked && searched) {
             trows[i].removeAttribute('hidden');
         }
-        else if(showAndChecked || !searched){
+        else if (showAndChecked || !searched) {
             trows[i].setAttribute('hidden', 'hidden');
         }
     }
 };
 
-var deleteCompleted = function(){
+var deleteCompleted = function () {
     for (var i = taskArray.length - 1; i >= 0; i--) {
         if (taskArray[i].status == 2) {
             removeTask(i);
@@ -246,7 +246,7 @@ var deleteCompleted = function(){
     }
 }
 
-var removeTaskByID = function(id){
+var removeTaskByID = function (id) {
     for (var i = taskArray.length - 1; i >= 0; i--) {
         if (taskArray[i]._id == id) {
             removeTask(i);
@@ -254,12 +254,12 @@ var removeTaskByID = function(id){
     }
 }
 
-var removeTask = function(index){
-    var trow = document.getElementById('trow'+taskArray[index]._id);
-    if(trow){
+var removeTask = function (index) {
+    var trow = document.getElementById('trow' + taskArray[index]._id);
+    if (trow) {
         trow.remove();
     }
-    if(index != null){
+    if (index != null) {
         DoActionMongo(Action.Delete, taskArray[index]);
         taskArray.splice(index, 1);
     }
@@ -268,8 +268,8 @@ var removeTask = function(index){
 
 
 var MongoClient = require('mongodb').MongoClient
-, co = require('co')
-, assert = require('assert');
+    , co = require('co')
+    , assert = require('assert');
 
 var ObjectId = require('mongodb').ObjectID;
 
@@ -282,52 +282,51 @@ const Action = {
     Delete: "DELETE"
 }
 
-function DoActionMongo(method, data){
-    co(function*() {
+function DoActionMongo(method, data) {
+    co(function* () {
         const db = yield MongoClient.connect(url);
         console.log("Connected successfully to server");
-        switch(method)
-        {
-            case Action.Post:   
-            return new Promise(
-                function (resolve) {
-                    var results = yield db.collection('tasks')
-                    .insert(data); 
-                    resolve(results);
-            });   
-            break;
-            case Action.Put: 
-            return new Promise(
-                function (resolve) {
-                    var results = yield db.collection('tasks')
-                    .update({"_id": ObjectId(data._id)},data); 
-                    resolve(results);
-            });       
-            break;
-            case Action.Delete:  
-            yield db.collection('tasks')
-            .deleteOne({"_id": ObjectId(data._id)});    
-            break;
-            case Action.Get:    
-            return new Promise(
-                function (resolve) {
-                    var results = yield collection.find({}).toArray(); 
-                    resolve(results);
-            });          
-            break;
+        switch (method) {
+            case Action.Post:
+                return new Promise(
+                    function (resolve) {
+                        var results = yield db.collection('tasks')
+                            .insert(data);
+                        resolve(results);
+                    });
+                break;
+            case Action.Put:
+                return new Promise(
+                    function (resolve) {
+                        var results = yield db.collection('tasks')
+                            .update({ "_id": ObjectId(data._id) }, data);
+                        resolve(results);
+                    });
+                break;
+            case Action.Delete:
+                yield db.collection('tasks')
+                    .deleteOne({ "_id": ObjectId(data._id) });
+                break;
+            case Action.Get:
+                return new Promise(
+                    function (resolve) {
+                        var results = yield collection.find({}).toArray();
+                        resolve(results);
+                    });
+                break;
         }
         db.close();
         console.log("Server Closed");
     }).catch(err => console.log(err));
 }
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
     DoActionMongo(Action.Get)
-    .then(tempArray => {
-        tempArray.forEach((tempTask)=>{
-            taskArray.push(tempTask);
-            addTaskToList(tempTask);
+        .then(tempArray => {
+            tempArray.forEach((tempTask) => {
+                taskArray.push(tempTask);
+                addTaskToList(tempTask);
+            });
+            percentageReload();
         });
-        percentageReload();
-    });
 });

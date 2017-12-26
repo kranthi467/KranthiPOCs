@@ -1,0 +1,19 @@
+D:\Saturday Learnings\12-16-2017\WindowsServiceDemoes\LogSystemData\LogSystemData\bin\Debug\LogSystemData.exe
+D:\Saturday Learnings\12-16-2017\WindowsServiceDemoes\LogSystemData\LogSystemData\bin\Debug\LogSystemData.exe.config
+D:\Saturday Learnings\12-16-2017\WindowsServiceDemoes\LogSystemData\LogSystemData\obj\Debug\LogSystemData.csprojResolveAssemblyReference.cache
+D:\Saturday Learnings\12-16-2017\WindowsServiceDemoes\LogSystemData\LogSystemData\obj\Debug\LogSystemData.ProjectInstaller.resources
+D:\Saturday Learnings\12-16-2017\WindowsServiceDemoes\LogSystemData\LogSystemData\obj\Debug\LogSystemData.Service1.resources
+D:\Saturday Learnings\12-16-2017\WindowsServiceDemoes\LogSystemData\LogSystemData\obj\Debug\LogSystemData.csproj.GenerateResource.Cache
+D:\Saturday Learnings\12-16-2017\WindowsServiceDemoes\LogSystemData\LogSystemData\obj\Debug\LogSystemData.csproj.CoreCompileInputs.cache
+D:\Saturday Learnings\12-16-2017\WindowsServiceDemoes\LogSystemData\LogSystemData\obj\Debug\LogSystemData.exe
+D:\Saturday Learnings\12-16-2017\WindowsServiceDemoes\LogSystemData\LogSystemData\obj\Debug\LogSystemData.pdb
+D:\Saturday Learnings\12-16-2017\WindowsServiceDemoes\LogSystemData\LogSystemData\bin\Debug\LogSystemData.pdb
+C:\Users\kranthi.ramasayam\Desktop\LogSystemData\LogSystemData\bin\Debug\LogSystemData.exe.config
+C:\Users\kranthi.ramasayam\Desktop\LogSystemData\LogSystemData\obj\Debug\LogSystemData.exe
+C:\Users\kranthi.ramasayam\Desktop\LogSystemData\LogSystemData\obj\Debug\LogSystemData.pdb
+C:\Users\kranthi.ramasayam\Desktop\LogSystemData\LogSystemData\bin\Debug\LogSystemData.exe
+C:\Users\kranthi.ramasayam\Desktop\LogSystemData\LogSystemData\bin\Debug\LogSystemData.pdb
+C:\Users\kranthi.ramasayam\Desktop\LogSystemData\LogSystemData\obj\Debug\LogSystemData.csprojResolveAssemblyReference.cache
+C:\Users\kranthi.ramasayam\Desktop\LogSystemData\LogSystemData\obj\Debug\LogSystemData.csproj.GenerateResource.Cache
+C:\Users\kranthi.ramasayam\Desktop\LogSystemData\LogSystemData\obj\Debug\SeesionMoniterService.ProjectInstaller.resources
+C:\Users\kranthi.ramasayam\Desktop\LogSystemData\LogSystemData\obj\Debug\SeesionMoniterService.Service1.resources
