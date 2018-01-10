@@ -1,0 +1,24 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid grey;
+}
+
+.flex-container>div.card {
+    background-color: #f1f1f1;
+    width: 400px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.flex-container>div.card-no-space {
+    background-color: #f1f1f1;
+    width: 400px;
+    padding: 30px;
+}
+
+.center {
+    margin: auto;
+    display: block;
+    margin: auto;
+}
