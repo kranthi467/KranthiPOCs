@@ -7,10 +7,11 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
-// // to fetch other required files
-// app.get('/js', function (req, res) {
-//   res.sendFile(__dirname + '/chat.js');
-// });
+app.get('/chat.js', function (req, res) {
+  res.sendFile(__dirname + '/chat.js');
+});
+
+var _users = [];
 
 io.on('connection', function (socket) {
   console.log('Connect with socket');
@@ -19,11 +20,11 @@ io.on('connection', function (socket) {
     // sending message to apps (broadcasting)
     io.emit('listening from server', msg);
   });
-
-  var _users = [];
+ 
   // registering user from one app
   socket.on('register at server', function (user) {
     _users.push(user);
+    console.log(_users);
     // sending users to apps (broadcasting)
     io.emit('update users', _users.join(','));
   });
@@ -33,6 +34,7 @@ io.on('connection', function (socket) {
     var index = _users.indexOf(user);
     if (index > -1) {
       _users.splice(index, 1);
+      console.log(_users);
       // sending users to apps (broadcasting)
       io.emit('update users', _users.join(','));
     }
