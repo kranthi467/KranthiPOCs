@@ -1,0 +1,33 @@
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.width400 {
+    width: 400px;
+}
+
+.box {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: -10px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.autoflex {
+    flex: auto;
+}
+
+.border10{
+    border: 10px solid grey;
+}
+
+.sprite-image {
+    background: url(image_sprite_1800_600.png) no-repeat -20px -20px;
+    background-size: 120px 40px;
+    height: 20px;
+    width: 20px;
+}

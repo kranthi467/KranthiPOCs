@@ -95,7 +95,7 @@ var addTask = function () {
             task.detail = taskNameInput.value;
             task.status = statusInput.value;
             task.tags = _tags;
-            DoActionMongo(Action.Put, task)
+            DoActionPromise(Action.Put, task)
                 .then(() => {
                     addTaskToList(task);
                     percentageReload();
@@ -104,7 +104,7 @@ var addTask = function () {
         }
         else {
             task = new Task(taskNameInput.value, statusInput.value, _tags);
-            DoActionMongo(Action.Post, task)
+            DoActionPromise(Action.Post, task)
                 .then(task => {
                     taskArray.push(task);
                     addTaskToList(task);
@@ -142,7 +142,6 @@ var addTaskToList = function (task) {
     else {
         trow = document.createElement('tr');
         trow.setAttribute("id", "trow" + task._id);
-
         tbody.appendChild(trow);
     }
 
@@ -196,7 +195,7 @@ var addTaskToList = function (task) {
             task.status = 1;
             tdataStatus.textContent = "Pending";
         }
-        DoActionMongo(Action.Put, task)
+        DoActionPromise(Action.Put, task)
             .then(() => {
                 addTaskToList(task);
                 percentageReload();
@@ -260,20 +259,11 @@ var removeTask = function (index) {
         trow.remove();
     }
     if (index != null) {
-        DoActionMongo(Action.Delete, taskArray[index]);
-        taskArray.splice(index, 1);
+        DoActionPromise(Action.Delete, taskArray[index])
+            .then(taskArray.splice(index, 1));
     }
     percentageReload();
 };
-
-
-var MongoClient = require('mongodb').MongoClient
-    , co = require('co')
-    , assert = require('assert');
-
-var ObjectId = require('mongodb').ObjectID;
-
-var url = 'mongodb://localhost/test';
 
 const Action = {
     Post: "POST",
@@ -282,46 +272,78 @@ const Action = {
     Delete: "DELETE"
 }
 
-function DoActionMongo(method, data) {
-    co(function* () {
-        const db = yield MongoClient.connect(url);
-        console.log("Connected successfully to server");
-        switch (method) {
-            case Action.Post:
-                return new Promise(
-                    function (resolve) {
-                        var results = yield db.collection('tasks')
-                            .insert(data);
-                        resolve(results);
-                    });
-                break;
-            case Action.Put:
-                return new Promise(
-                    function (resolve) {
-                        var results = yield db.collection('tasks')
-                            .update({ "_id": ObjectId(data._id) }, data);
-                        resolve(results);
-                    });
-                break;
-            case Action.Delete:
-                yield db.collection('tasks')
-                    .deleteOne({ "_id": ObjectId(data._id) });
-                break;
-            case Action.Get:
-                return new Promise(
-                    function (resolve) {
-                        var results = yield collection.find({}).toArray();
-                        resolve(results);
-                    });
-                break;
-        }
-        db.close();
-        console.log("Server Closed");
-    }).catch(err => console.log(err));
+function DoActionPromise(method, data) {
+    let xhr = new XMLHttpRequest();
+    var url = "http://localhost:3000/tasks";
+    switch (method) {
+        case Action.Post:
+            return new Promise(
+                function (resolve, reject) {
+                    xhr.open(method, url);
+                    xhr.setRequestHeader('Content-Type', 'application/json');
+                    xhr.onload = () => {
+                        if (xhr.status == 200 && xhr.readyState == 4) {
+                            resolve(JSON.parse(xhr.responseText));
+                        } else {
+                            console.log("Failed: " + method);
+                        }
+                    };
+                    xhr.send(JSON.stringify(data));
+                });
+            break;
+        case Action.Put:
+            url += "/" + data._id;
+            return new Promise(
+                function (resolve, reject) {
+                    xhr.open(method, url);
+                    xhr.setRequestHeader('Content-Type', 'application/json');
+                    xhr.onload = () => {
+                        if (xhr.status == 200 && xhr.readyState == 4) {
+                            resolve(data);
+                        } else {
+                            console.log("Failed: " + method);
+                        }
+                    };
+                    xhr.send(JSON.stringify(data));
+                });
+            break;
+        case Action.Delete:
+            url += "/" + data._id;
+            return new Promise(
+                function (resolve, reject) {
+                    xhr.open(method, url);
+                    xhr.setRequestHeader('Content-Type', 'application/json');
+                    xhr.onload = () => {
+                        if (xhr.status == 200 && xhr.readyState == 4) {
+                            console.log(xhr.responseText);
+                            resolve(data);
+                        } else {
+                            console.log("Failed: " + method);
+                        }
+                    };
+                    xhr.send();
+                });
+            break;
+        case Action.Get:
+            return new Promise(
+                function (resolve, reject) {
+                    xhr.open(method, url);
+                    xhr.setRequestHeader('Content-Type', 'application/json');
+                    xhr.onload = () => {
+                        if (xhr.status == 200 && xhr.readyState == 4) {
+                            resolve(JSON.parse(xhr.responseText));
+                        } else {
+                            console.log("Failed: " + method);
+                        }
+                    };
+                    xhr.send();
+                });
+            break;
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    DoActionMongo(Action.Get)
+    DoActionPromise(Action.Get)
         .then(tempArray => {
             tempArray.forEach((tempTask) => {
                 taskArray.push(tempTask);
