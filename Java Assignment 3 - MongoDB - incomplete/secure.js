@@ -28,17 +28,15 @@ app.post('/signup', function (req, res) {
     } else {
         Users.findOne({ 'username': req.body.id })
             .then(result => {
-                if (result == null && req.body.password == req.body.confirmPassword) {
+                if (result == null) {
                     var newUser = { username: req.body.id, password: req.body.password, email: req.body.email };
                     Users.create(newUser)
                         .then(result => {
                             console.log(result);
-                            res.redirect('/');
+                            req.session.userid = result._id;
                         })
-                        .catch(err => res.render('login', {
-                            message: "Got Error while signing up, Try again",
-                            type: "signup"
-                        }));
+                        .catch(err => console.log(err));
+                    res.redirect('/');
                 }
                 else {
                     res.render('login', {
@@ -51,6 +49,21 @@ app.post('/signup', function (req, res) {
                 message: "Got Error while signing up, Try again",
                 type: "signup"
             }))
+        // if (_loggedinUsers.filter(function (user) {
+        //     if (user.id === req.body.id) {
+        //         res.render('login', {
+        //             message: "User Already Exists! Login or choose another user id",
+        //             type: "signup"
+        //         });
+        //         return user;
+        //     }
+        // }).length == 0) {
+        //     var newUser = { id: req.body.id, password: req.body.password };
+        //     console.log(_loggedinUsers);
+        //     _loggedinUsers.push(newUser);
+        //     req.session.user = newUser;
+        //     res.redirect('/');
+        // }
     }
 });
 
@@ -59,14 +72,13 @@ app.get('/login', function (req, res) {
 });
 
 app.post('/login', function (req, res) {
-
     if (!req.body.id || !req.body.password) {
         res.render('login', { message: "Please enter both id and password", type: "login" });
     } else {
         Users.findOne({ 'username': req.body.id })
             .then(result => {
                 if (result != null && result.password == req.body.password) {
-                    req.session.userid = result._id;
+                    req.session.user = result;
                     if (_loggedinUsers.filter(function (user) {
                         if (user.username === req.body.id) {
                             return user;
@@ -80,6 +92,15 @@ app.post('/login', function (req, res) {
                     res.render('login', { message: "Invalid credentials!", type: "login" });
                 }
             })
+        // if (_loggedinUsers.filter(function (user) {
+        //     if (user.id === req.body.id && user.password === req.body.password) {
+        //         req.session.user = user;
+        //         res.redirect('/ToDo');
+        //         return user;
+        //     }
+        // }).length == 0) {
+        //     res.render('login', { message: "Invalid credentials!", type: "login" });
+        // }
     }
 });
 
@@ -91,13 +112,13 @@ app.get('/logout', function (req, res) {
 });
 
 function checkSignIn(req, res, next) {
-    if (req.session.userid) {
+    if (req.session.user) {
         var userIn = _loggedinUsers.filter(function (user) {
-            if (user._id == req.session.userid) {
+            if (user._id == req.session.user._id) {
                 return user;
             }
         });
-        if (userIn.length != 0) {
+        if (userIn.length != 0 && userIn[0].username == req.session.user.username) {
             next();     //If session exists, proceed to page
         }
         else {
@@ -105,7 +126,7 @@ function checkSignIn(req, res, next) {
         }
     } else {
         var err = new Error("Not logged in!");
-        console.log("LogIn check error:" + JSON.stringify(req.session.user));
+        console.log(req.session.user);
         res.redirect('/');
     }
 }

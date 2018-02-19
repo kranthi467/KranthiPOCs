@@ -25,15 +25,15 @@ html
                     form(action = "/signup" method = "POST")
                         div
                             label(for="username") User Name:
-                            input(name = "id" type = "text" class="form-control" required placeholder = "User Name" minlength="6" autocomplete="off")
+                            input(name = "id" type = "text" class="form-control" required placeholder = "User Name")
                         div
                             label(for="email") Email:
-                            input(name = "email" type = "email" class="form-control" required placeholder = "Email@example.com" minlength="6" autocomplete="off")
+                            input(name = "email" type = "email" class="form-control" required placeholder = "Email@example.com")
                         div
                             label(for="password") Password:
-                            input(name = "password" type = "password" class="form-control" required placeholder = "Password" minlength="6" autocomplete="off")
+                            input(name = "password" type = "password" class="form-control" required placeholder = "Password")
                         div
                             label(for="confirmPassword") Retype Password:
-                            input(name = "confirmPassword" type = "password" class="form-control" required placeholder = "Retype Password" min="6" autocomplete="off")
+                            input(name = "confirmPassword" type = "password" class="form-control" required placeholder = "Retype Password")
                         br
                         button(type = "Submit" class="btn") Sign me up!

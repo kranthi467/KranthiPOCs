@@ -17,9 +17,8 @@ var ExecuteFunctions = function (func) {
 }
 
 // Insert Record
-var insertDocuments = function (userid, data, callback) {
+var insertDocuments = function (data, callback) {
     return ExecuteFunctions(function (db) {
-        data.UserID = userid;
         const results = db.collection('tasks')
             .insert(data);
         return results;
@@ -35,32 +34,55 @@ var EditDocuments = function (id, data, callback) {
     });
 }
 // Delete by ID
-var DeleteOneByID = function (userid, id, callback) {
+var DeleteOneByID = function (id, callback) {
     return ExecuteFunctions(function (db) {
         const results = db.collection('tasks')
-            .deleteOne({ "_id": ObjectId(id), 'UserID': userid });
+            .deleteOne({ "_id": ObjectId(id) });
         return results;
     });
 }
 
 // Query Collection
-var findDocument = function (userid, name) {
+var findDocument = function (name) {
     return ExecuteFunctions(function (db) {
-        const collection = db.collection('tasks').find({ 'UserID': userid });
+        const collection = db.collection('tasks');
         var criteria = ".*" + name + ".*";
         const docs = collection.findOne({ detail: { $regex: criteria } });
         return docs;
     });
 }
 
-var findAllDocuments = function (userid, callback) {
+var findAllDocuments = function (callback) {
     return ExecuteFunctions(function (db) {
         const collection = db.collection('tasks');
-        const docs = collection.find({ 'UserID': userid }).toArray();
+        const docs = collection.find().toArray();
         return docs;
     })
         .then(docs => callback(null, docs))
         .catch(err => callback(err));
+}
+
+// Create Index
+var indexCollection = function () {
+    return ExecuteFunctions(function (db) {
+        const results = db.collection('tasks').createIndex(
+            { "name": 1 },
+            null
+        );
+        return results;
+    });
+};
+
+// Perform Aggregation
+var aggregateDocuments = function (callback) {
+    return ExecuteFunctions(function (db) {
+        const results = db.collection('restaurants')
+            .aggregate(
+                [{ '$match': { "categories": "Bakery" } },
+                { '$group': { '_id': "$stars", 'count': { '$sum': 1 } } }])
+            .toArray();
+        return results;
+    });
 }
 
 module.exports.mongoDB = {
