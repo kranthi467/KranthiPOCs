@@ -1,0 +1,5 @@
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\Structural\Structural\bin\Debug\Structural.exe.config
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\Structural\Structural\bin\Debug\Structural.exe
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\Structural\Structural\bin\Debug\Structural.pdb
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\Structural\Structural\obj\Debug\Structural.exe
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\Structural\Structural\obj\Debug\Structural.pdb

@@ -1,0 +1,13 @@
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingConsole\WebApiUsingConsole\bin\Debug\WebApiUsingConsole.exe.config
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingConsole\WebApiUsingConsole\bin\Debug\WebApiUsingConsole.exe
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingConsole\WebApiUsingConsole\bin\Debug\WebApiUsingConsole.pdb
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingConsole\WebApiUsingConsole\bin\Debug\Newtonsoft.Json.dll
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingConsole\WebApiUsingConsole\bin\Debug\System.Net.Http.Formatting.dll
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingConsole\WebApiUsingConsole\bin\Debug\Newtonsoft.Json.xml
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingConsole\WebApiUsingConsole\bin\Debug\System.Net.Http.Formatting.xml
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingConsole\WebApiUsingConsole\obj\Debug\WebApiUsingConsole.csprojResolveAssemblyReference.cache
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingConsole\WebApiUsingConsole\obj\Debug\WebApiUsingConsole.exe
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingConsole\WebApiUsingConsole\obj\Debug\WebApiUsingConsole.pdb
+C:\Users\kranthi.ramasayam\Desktop\GitAssignment\WebApiUsingConsole\WebApiUsingConsole\bin\Debug\WebApiUsingConsole.exe.config
+C:\Users\kranthi.ramasayam\Desktop\GitAssignment\WebApiUsingConsole\WebApiUsingConsole\obj\Debug\WebApiUsingConsole.exe
+C:\Users\kranthi.ramasayam\Desktop\GitAssignment\WebApiUsingConsole\WebApiUsingConsole\obj\Debug\WebApiUsingConsole.pdb

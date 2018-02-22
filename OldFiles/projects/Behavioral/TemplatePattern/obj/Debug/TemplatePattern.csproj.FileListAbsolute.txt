@@ -1,0 +1,6 @@
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\StratergyPattern\TemplatePattern\bin\Debug\TemplatePattern.exe.config
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\StratergyPattern\TemplatePattern\bin\Debug\TemplatePattern.exe
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\StratergyPattern\TemplatePattern\bin\Debug\TemplatePattern.pdb
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\StratergyPattern\TemplatePattern\obj\Debug\TemplatePattern.csprojResolveAssemblyReference.cache
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\StratergyPattern\TemplatePattern\obj\Debug\TemplatePattern.exe
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\StratergyPattern\TemplatePattern\obj\Debug\TemplatePattern.pdb

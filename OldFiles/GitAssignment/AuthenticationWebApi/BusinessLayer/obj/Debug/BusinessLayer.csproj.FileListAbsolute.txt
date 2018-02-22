@@ -1,0 +1,11 @@
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\AuthenticationWebApi\BusinessLayer\bin\Debug\BusinessLayer.dll
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\AuthenticationWebApi\BusinessLayer\bin\Debug\BusinessLayer.pdb
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\AuthenticationWebApi\BusinessLayer\bin\Debug\Newtonsoft.Json.dll
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\AuthenticationWebApi\BusinessLayer\bin\Debug\System.Net.Http.Formatting.dll
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\AuthenticationWebApi\BusinessLayer\bin\Debug\Newtonsoft.Json.xml
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\AuthenticationWebApi\BusinessLayer\bin\Debug\System.Net.Http.Formatting.xml
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\AuthenticationWebApi\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\AuthenticationWebApi\BusinessLayer\obj\Debug\BusinessLayer.dll
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\AuthenticationWebApi\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\abhinay.cheela\documents\visual studio 2015\Projects\AuthenticationWebApi\BusinessLayer\bin\Debug\DTO.dll
+C:\Users\abhinay.cheela\documents\visual studio 2015\Projects\AuthenticationWebApi\BusinessLayer\bin\Debug\DTO.pdb

@@ -1,0 +1,4 @@
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolDatabase\bin\Debug\SchoolDatabase.dll
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolDatabase\bin\Debug\SchoolDatabase.pdb
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolDatabase\obj\Debug\SchoolDatabase.dll
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolDatabase\obj\Debug\SchoolDatabase.pdb

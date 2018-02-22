@@ -1,0 +1,12 @@
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingEntity\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingEntity\PresentationLayer\bin\Debug\PresentationLayer.exe
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingEntity\PresentationLayer\bin\Debug\PresentationLayer.pdb
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingEntity\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingEntity\PresentationLayer\obj\Debug\PresentationLayer.exe
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingEntity\PresentationLayer\obj\Debug\PresentationLayer.pdb
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingEntity\PresentationLayer\bin\Debug\BusinessLayer.dll
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingEntity\PresentationLayer\bin\Debug\Newtonsoft.Json.dll
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingEntity\PresentationLayer\bin\Debug\System.Net.Http.Formatting.dll
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingEntity\PresentationLayer\bin\Debug\BusinessLayer.pdb
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingEntity\PresentationLayer\bin\Debug\Newtonsoft.Json.xml
+c:\users\abhinay.cheela\documents\visual studio 2015\Projects\WebApiUsingEntity\PresentationLayer\bin\Debug\System.Net.Http.Formatting.xml

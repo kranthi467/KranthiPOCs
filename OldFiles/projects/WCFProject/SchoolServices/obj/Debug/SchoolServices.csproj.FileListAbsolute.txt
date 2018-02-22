@@ -1,0 +1,9 @@
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServices\obj\Debug\SchoolServices.csprojResolveAssemblyReference.cache
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServices\bin\Debug\SchoolServices.dll
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServices\bin\Debug\SchoolServices.pdb
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServices\bin\Debug\BasicWebService.dll
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServices\bin\Debug\SchoolDatabase.dll
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServices\bin\Debug\BasicWebService.pdb
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServices\bin\Debug\SchoolDatabase.pdb
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServices\obj\Debug\SchoolServices.dll
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServices\obj\Debug\SchoolServices.pdb

@@ -1,0 +1,11 @@
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServiceClient\obj\Debug\SchoolServiceClient.Form1.resources
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServiceClient\obj\Debug\SchoolServiceClient.Properties.Resources.resources
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServiceClient\obj\Debug\SchoolServiceClient.csproj.GenerateResource.Cache
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServiceClient\bin\Debug\SchoolServiceClient.exe.config
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServiceClient\bin\Debug\SchoolServiceClient.exe
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServiceClient\bin\Debug\SchoolServiceClient.pdb
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServiceClient\bin\Debug\BasicWebService.dll
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServiceClient\bin\Debug\BasicWebService.pdb
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServiceClient\obj\Debug\SchoolServiceClient.exe
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServiceClient\obj\Debug\SchoolServiceClient.pdb
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\SchoolServiceClient\obj\Debug\SchoolServiceClient.csprojResolveAssemblyReference.cache

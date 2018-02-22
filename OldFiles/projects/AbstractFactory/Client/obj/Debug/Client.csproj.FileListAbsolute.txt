@@ -1,0 +1,8 @@
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\AbstractFactory\Client\bin\Debug\Client.exe.config
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\AbstractFactory\Client\bin\Debug\Client.exe
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\AbstractFactory\Client\bin\Debug\Client.pdb
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\AbstractFactory\Client\bin\Debug\AbstractFactoryLib.dll
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\AbstractFactory\Client\bin\Debug\AbstractFactoryLib.pdb
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\AbstractFactory\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\AbstractFactory\Client\obj\Debug\Client.exe
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\AbstractFactory\Client\obj\Debug\Client.pdb
