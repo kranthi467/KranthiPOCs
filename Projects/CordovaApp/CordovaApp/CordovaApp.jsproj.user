@@ -2,6 +2,13 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
     <DebuggerFlavor>AndroidEmulator</DebuggerFlavor>
-    <AndroidEmulatorID>AndroidEmulator;Google Android Emulator</AndroidEmulatorID>
+    <AndroidEmulatorID>0095900D-83BB-46BD-8AEB-1650B9BF7508;VS Emulator 5.5" Marshmallow (6.0.0) XXXHDPI Phone</AndroidEmulatorID>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ReferenceCachePath>C:\Users\kranthi.ramasayam\AppData\Local\Temp\pj3ds00g_CordovaApp_refcache</ReferenceCachePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <DebuggerFlavor>AndroidEmulator</DebuggerFlavor>
+    <AndroidEmulatorID>226C76AC-9E9A-4EBD-A495-79E8C5C5292F;VS Emulator 7" KitKat (4.4) XHDPI Tablet</AndroidEmulatorID>
   </PropertyGroup>
 </Project>
