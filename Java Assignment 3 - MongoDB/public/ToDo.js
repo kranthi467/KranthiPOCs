@@ -187,16 +187,16 @@ var addTaskToList = function (task) {
     trow.appendChild(tdataActions);
 
     completed.onclick = function () {
-        if (task.status == 1) {
-            task.status = 2;
-            tdataStatus.textContent = "Completed";
-        }
-        else {
-            task.status = 1;
-            tdataStatus.textContent = "Pending";
-        }
         DoActionPromise(Action.Put, task)
             .then(() => {
+                if (task.status == 1) {
+                    task.status = 2;
+                    tdataStatus.textContent = "Completed";
+                }
+                else {
+                    task.status = 1;
+                    tdataStatus.textContent = "Pending";
+                }
                 addTaskToList(task);
                 percentageReload();
             });

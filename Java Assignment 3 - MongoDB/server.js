@@ -10,11 +10,13 @@ app.get('/', function (req, res) {
   res.render('login', { message: "Please Login", type: "login" });
 });
 
-app.get('/ToDo', secure.IsUserLoggedIn, function (req, res) {
+app.use(secure.IsUserLoggedIn);
+
+app.get('/ToDo', function (req, res) {
   res.sendFile(__dirname + '/ToDo.html');
 });
 
-app.get('/tasks', secure.IsUserLoggedIn, function (req, res) {
+app.get('/tasks', function (req, res) {
   console.log('==>' + JSON.stringify(req.session.userid));
   // using callback, can use for all requests also
   dba.mongoDB.findAllDocuments(req.session.userid, function (err, results) {
@@ -25,7 +27,7 @@ app.get('/tasks', secure.IsUserLoggedIn, function (req, res) {
   });
 });
 
-app.post('/tasks', secure.IsUserLoggedIn, function (req, res, userid) {
+app.post('/tasks', function (req, res, userid) {
   console.log(req.body);
   co(function* () {
     var results = yield dba.mongoDB.insertDocuments(req.session.userid, req.body);
@@ -38,7 +40,7 @@ app.post('/tasks', secure.IsUserLoggedIn, function (req, res, userid) {
     .catch(err => console.log(err));
 });
 
-app.delete('/tasks/:_id', secure.IsUserLoggedIn, function (req, res, userid) {
+app.delete('/tasks/:_id', function (req, res, userid) {
   console.log(req.params._id);
   co(function* () {
     var results = dba.mongoDB.DeleteOneByID(req.session.userid, req.params._id);
@@ -51,10 +53,10 @@ app.delete('/tasks/:_id', secure.IsUserLoggedIn, function (req, res, userid) {
     .catch(err => console.log(err));
 });
 
-app.put('/tasks/:_id', secure.IsUserLoggedIn, function (req, res, userid) {
+app.put('/tasks/:_id', function (req, res, userid) {
   console.log(req.params._id);
   co(function* () {
-    var results = yield dba.mongoDB.EditDocuments(req.session.userid, req.params._id, req.body);
+    var results = yield dba.mongoDB.EditDocuments(req.params._id, req.body);
     return results;
   })
     .then(results => {
@@ -65,5 +67,5 @@ app.put('/tasks/:_id', secure.IsUserLoggedIn, function (req, res, userid) {
 });
 
 app.listen(3000, () => {
-  console.log('Server is running')
+  console.log('Server is running');
 });

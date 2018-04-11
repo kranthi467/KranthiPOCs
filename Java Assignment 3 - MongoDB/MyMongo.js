@@ -10,7 +10,7 @@ var ExecuteFunctions = function (func) {
     return co(function* () {
         var db = yield MongoClient.connect(url);
         const results = yield func(db);
-        console.log(results)
+        console.log("My Result:" + JSON.stringify(results));
         db.close();
         return results;
     });
@@ -29,6 +29,8 @@ var insertDocuments = function (userid, data, callback) {
 var EditDocuments = function (id, data, callback) {
     return ExecuteFunctions(function (db) {
         delete data._id;
+        console.log("id:"+id);
+        console.log("Data:"+JSON.stringify(data));
         const results = db.collection('tasks')
             .update({ "_id": ObjectId(id) }, data);
         return results;

@@ -8,7 +8,7 @@ var Users = require('./mongooseDB.js').Users;
 app.use(cookieParser());
 app.use(session({ secret: "Nenu chepp@ r@ neeku" }));
 app.set('view engine', 'pug');
-app.set('views', './public');
+app.set('views', './views');
 app.use(express.static('public'));
 app.use(bodyParser.json());          // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({      // to support URL-encoded bodies
@@ -101,10 +101,10 @@ function checkSignIn(req, res, next) {
             next();     //If session exists, proceed to page
         }
         else {
+            req.session.destroy();
             res.render('login', { message: "Please Log In", type: "login" });
         }
     } else {
-        var err = new Error("Not logged in!");
         console.log("LogIn check error:" + JSON.stringify(req.session.user));
         res.redirect('/');
     }
