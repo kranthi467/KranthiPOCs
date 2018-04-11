@@ -6,7 +6,13 @@ var bodyParser = require('body-parser');
 var Users = require('./mongooseDB.js').Users;
 
 app.use(cookieParser());
-app.use(session({ secret: "Nenu chepp@ r@ neeku" }));
+app.use(session(
+    {
+        secret: "Nenu chepp@ r@ neeku",
+        resave: false,
+        saveUninitialized: false
+    }
+));
 app.set('view engine', 'pug');
 app.set('views', './views');
 app.use(express.static('public'));
@@ -47,10 +53,12 @@ app.post('/signup', function (req, res) {
                     });
                 }
             })
-            .catch(err => res.render('login', {
-                message: "Got Error while signing up, Try again",
-                type: "signup"
-            }))
+            .catch(err => {
+                res.render('login', {
+                    message: "Got Error while signing up, Try again",
+                    type: "signup"
+                });
+            })
     }
 });
 
@@ -80,6 +88,7 @@ app.post('/login', function (req, res) {
                     res.render('login', { message: "Invalid credentials!", type: "login" });
                 }
             })
+            .catch(err => res.render('login', { message: "Something went wrong", type: "login" }));
     }
 });
 

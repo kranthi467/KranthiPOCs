@@ -99,7 +99,8 @@ var addTask = function () {
                 .then(() => {
                     addTaskToList(task);
                     percentageReload();
-                });
+                })
+                .catch();
             _editMode.isEdit = false;
         }
         else {
@@ -109,7 +110,8 @@ var addTask = function () {
                     taskArray.push(task);
                     addTaskToList(task);
                     percentageReload();
-                });
+                })
+                .catch();
         }
         taskNameInput.value = "";
         statusInput.value = 1;
@@ -199,7 +201,8 @@ var addTaskToList = function (task) {
                 }
                 addTaskToList(task);
                 percentageReload();
-            });
+            })
+            .catch();
     };
 };
 
@@ -260,7 +263,8 @@ var removeTask = function (index) {
     }
     if (index != null) {
         DoActionPromise(Action.Delete, taskArray[index])
-            .then(taskArray.splice(index, 1));
+            .then(taskArray.splice(index, 1))
+            .catch();
     }
     percentageReload();
 };
@@ -350,5 +354,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 addTaskToList(tempTask);
             });
             percentageReload();
-        });
+        })
+        .catch();
 });

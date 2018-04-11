@@ -1,7 +1,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="ToDo.js"></script>
 </head>
@@ -44,7 +45,7 @@
                     <div id='errors' class='text-danger small'></div>
                     <div class="form-group">
                         <label for="taskname">Task Name:</label>
-                        <input type="text" class="form-control" name="taskname" id="taskname" placeholder="Task Name"/>
+                        <input type="text" class="form-control" name="taskname" id="taskname" placeholder="Task Name" />
                     </div>
                     <div class="form-group">
                         <label for="status">Status:</label>
@@ -56,7 +57,7 @@
                     <div class="form-group">
                         <label for="tags">Tags:</label>
                         <div class="d-flex">
-                            <input type="text" class="form-control" name="tags" id="tags" placeholder="add tags here"/>
+                            <input type="text" class="form-control" name="tags" id="tags" placeholder="add tags here" />
                             <button class="btn" onclick="addTag()">+</button>
                         </div>
                         <div id="tagdisplay" class="float-left"></div>
@@ -65,13 +66,16 @@
                 </div>
             </div>
             <div class='col-lg-2' id="testdisplay">
-                <a href="/logout" class="float-right"><b>Log  Out</b></a>
+                <a href="/logout" class="float-right">
+                    <b>Log Out</b>
+                </a>
             </div>
         </div>
         <div class="row m-4">
             <div class='col-lg-3'></div>
             <div class='input-group col-lg-2'>
-                <input id="search" type="text" class="form-control border-right-0" placeholder="Search..." oninput="hidePendingAndSearch()"/>
+                <input id="search" type="text" class="form-control border-right-0" placeholder="Search..." oninput="hidePendingAndSearch()"
+                />
                 <span class="input-group-addon bg-white">
                     <i class="material-icons">search</i>
                 </span>

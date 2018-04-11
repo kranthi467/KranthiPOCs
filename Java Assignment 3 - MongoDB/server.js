@@ -16,15 +16,28 @@ app.get('/ToDo', function (req, res) {
   res.sendFile(__dirname + '/ToDo.html');
 });
 
+// Note: Removed callback due to warning: "UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): TypeError: callback is not a function"
 app.get('/tasks', function (req, res) {
   console.log('==>' + JSON.stringify(req.session.userid));
   // using callback, can use for all requests also
-  dba.mongoDB.findAllDocuments(req.session.userid, function (err, results) {
-    if (err)
-      res.sendStatus(404);
-    else
+  // dba.mongoDB.findAllDocuments(req.session.userid, function (err, results) {
+  //   if (err)
+  //     res.sendStatus(404);
+  //   else
+  //     res.send(results);
+  // });
+  co(function* () {
+    var results = yield dba.mongoDB.findAllDocuments(req.session.userid);
+    return results;
+  })
+    .then(results => {
+      console.log(results);
       res.send(results);
-  });
+    })
+    .catch(err => {
+      console.log(err);
+      res.sendStatus(404)
+    });
 });
 
 app.post('/tasks', function (req, res, userid) {
