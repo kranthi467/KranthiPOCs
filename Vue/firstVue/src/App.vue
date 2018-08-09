@@ -1,5 +1,9 @@
 <template>
   <div id="default">
+    <p>
+      <router-link to="{ name: 'hello', params: {placeName: 'Hi' } }">home</router-link>
+    </p>
+    
     <img src="./assets/logo.png">
     <router-view/>
   </div>
@@ -7,7 +11,7 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'Apper'
 }
 </script>
 

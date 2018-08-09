@@ -1,0 +1,5 @@
+C:\Users\kranthi.ramasayam\Desktop\POCs\KranthiPOCs\Projects\ActiveDirectoryLogin\ActiveDirectoryLogin\bin\Debug\ActiveDirectoryLogin.exe
+C:\Users\kranthi.ramasayam\Desktop\POCs\KranthiPOCs\Projects\ActiveDirectoryLogin\ActiveDirectoryLogin\bin\Debug\ActiveDirectoryLogin.pdb
+C:\Users\kranthi.ramasayam\Desktop\POCs\KranthiPOCs\Projects\ActiveDirectoryLogin\ActiveDirectoryLogin\obj\x86\Debug\ActiveDirectoryLogin.csprojResolveAssemblyReference.cache
+C:\Users\kranthi.ramasayam\Desktop\POCs\KranthiPOCs\Projects\ActiveDirectoryLogin\ActiveDirectoryLogin\obj\x86\Debug\ActiveDirectoryLogin.exe
+C:\Users\kranthi.ramasayam\Desktop\POCs\KranthiPOCs\Projects\ActiveDirectoryLogin\ActiveDirectoryLogin\obj\x86\Debug\ActiveDirectoryLogin.pdb

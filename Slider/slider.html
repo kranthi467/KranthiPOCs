@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="./dist/bootstrap-slider.js"></script>
+
+
+    <link href="./dist/css/bootstrap-slider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #RGB {
+            height: 20px;
+            background: rgb(128, 128, 128);
+        }
+        
+        #GC .slider-selection {
+            background: #46296A;
+        }
+        
+        #GC .slider-handle {
+            background: white;
+            width: 11px;
+            height: 21px;
+        }
+        
+        #GC .slider-track {
+            height: 12px;
+        }
+        
+        #GC .slider-track .slider-track-high {
+            background: #d3d3d3;
+        }
+        
+        #G {
+            width: 120px;
+        }
+        
+        #GC {
+            width: 120px;
+        }
+        
+        #Volumeslider {
+            background-color: #0000004d;
+            z-index: 5;
+            width: 170px;
+            padding: 0px 5px;
+        }
+        
+        #Volumeslider p {
+            z-index: 0;
+        }
+        
+        #Volumeslider i {
+            font-size: 20px;
+            padding-top: 4px;
+            vertical-align: middle;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Volumeslider">
+        <p>
+            <i class="fa fa-volume-up" id='volumeicon'></i> &nbsp;
+            <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"
+                data-slider-id="GC" id="G" data-slider-tooltip="hide" data-slider-handle="round" />
+        </p>
+
+    </div>
+    <script>
+        function SetVolume(type) {
+
+            console.log(type / 100);
+            $('#G').slider('setValue', type);
+        };
+        $(document).ready(function () {
+              var RGBChange = function() {
+	          console.log(g.getValue());
+	        };
+	        var g = $('#G').slider()
+	                	.on('slide', RGBChange)
+	                	.data('slider');
+            $('#volumeicon').click(function () {
+                if ($(this).hasClass("fa-volume-up")) {
+                    $(this).removeClass("fa-volume-up");
+                    $(this).addClass("fa-volume-off");
+                    SetVolume(0);
+                }
+                else if ($(this).hasClass("fa-volume-off")) {
+                    $(this).removeClass("fa-volume-off");
+                    $(this).addClass("fa-volume-up");
+                    SetVolume(20);
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

@@ -85,10 +85,11 @@
 
 <script>
 export default {
+  props: ['nameForView'],
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Hi '+nameForView+', Welcome to Your Vue.js App'
     }
   }
 }
