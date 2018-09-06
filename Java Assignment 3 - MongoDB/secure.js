@@ -15,7 +15,7 @@ app.use(session(
 ));
 app.set('view engine', 'pug');
 app.set('views', './views');
-app.use(express.static('public'));
+app.use(express.static('public'));   // setting static folder(exposed to net)
 app.use(bodyParser.json());          // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({      // to support URL-encoded bodies
     extended: true

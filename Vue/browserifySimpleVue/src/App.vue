@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="http://vuejs.org/images/logo.png">
-    <hello :name-for-view="name">Slot data</hello>
+    <hello :name-for-view="name" slot="data">Slot data</hello>
   </div>
 </template>
 
