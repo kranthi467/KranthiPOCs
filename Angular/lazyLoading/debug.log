@@ -1,0 +1,6 @@
+[0323/103409:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0323/103409:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0323/113202.813:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0323/122004.482:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0324/125435:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0324/125435:ERROR:node_debugger.cc(86)] Cannot start debugger server
