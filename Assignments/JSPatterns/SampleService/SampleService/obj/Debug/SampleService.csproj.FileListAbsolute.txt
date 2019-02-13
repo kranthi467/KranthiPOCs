@@ -1,0 +1,10 @@
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe.config
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.exe
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\SampleService\SampleService\bin\Debug\SampleService.pdb
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\SampleService\SampleService\obj\Debug\SampleService.csprojResolveAssemblyReference.cache
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\SampleService\SampleService\obj\Debug\SampleService.exe
+c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\SampleService\SampleService\obj\Debug\SampleService.pdb
+C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\Topshelf.dll
+C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\SampleService\SampleService\bin\Debug\Topshelf.xml
+C:\Users\kranthi.ramasayam\documents\visual studio 2015\Projects\SampleService\SampleService\obj\Debug\SampleService.ProjectInstaller.resources
+C:\Users\kranthi.ramasayam\documents\visual studio 2015\Projects\SampleService\SampleService\obj\Debug\SampleService.csproj.GenerateResource.Cache
