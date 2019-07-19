@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceMonitor } from 'src/app/models/ServiceMonitor';
+import { ServiceMonitorService } from 'src/app/service/servicemonitor.service';
 
 @Component({
   selector: 'pm-detail',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailComponent implements OnInit {
 
-  constructor() { }
+  _service:ServiceMonitorService;
+  constructor(private service:ServiceMonitorService) { 
+    this._service = service; 
+  }
+
+  _services: ServiceMonitor[];
 
   ngOnInit() {
+    this._services = this._service.getServices();
+    console.log(JSON.stringify(this._services));
   }
 
 }

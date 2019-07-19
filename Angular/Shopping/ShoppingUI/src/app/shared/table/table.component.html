@@ -1,0 +1,8 @@
+<table>
+  <tr>
+    <th *ngFor="let item of _headers">{{item}}</th>
+  </tr>
+  <tr *ngFor="let row of data">
+    <td *ngFor="let item of readProps(row)">{{item}}</td>
+  </tr>
+</table>

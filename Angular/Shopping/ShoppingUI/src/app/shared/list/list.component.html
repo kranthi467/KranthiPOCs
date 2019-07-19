@@ -1,0 +1,7 @@
+﻿<ul>
+  <li *ngFor="let item of list"
+  [class.selected]="item === _selectedItem"
+  (click)="onSelect(item)">
+    <span class="badge" *ngFor="let column of getKeys(item)" >{{readProp(item, column)}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </li>
+</ul>

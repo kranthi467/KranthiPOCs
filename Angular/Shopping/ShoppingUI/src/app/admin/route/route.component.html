@@ -1,3 +1,28 @@
-<p>
+<div>
   admin route works!
-</p>
+  <app-list [list]="arr"> </app-list>
+  <app-table [data]="arr1"> </app-table>
+  <mat-checkbox [(ngModel)]='bool'>Example</mat-checkbox>
+  Example: {{bool}}
+    <p>first number:</p>
+    
+    <input type="text" [(ngModel)] = 'value' (keyup)="onChangeText()"/>
+    value: {{value}}
+    <p>second number:</p><input type ="text" [(ngModel)] = 'values' (change)="onChangeText()"/>
+    values: {{values}}
+    <div> results: {{result}}</div>
+
+    <form class="example-container" [formGroup]="options">
+      <mat-checkbox formControlName="hideRequired">Hide required marker</mat-checkbox>
+      <div>
+        <label>Float label: </label>
+        <mat-radio-group formControlName="floatLabel">
+          <mat-radio-button value="auto">Auto</mat-radio-button>
+          <mat-radio-button value="always">Always</mat-radio-button>
+          <mat-radio-button value="never">Never</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </form>
+    Details: hideRequired: {{options.value.hideRequired}},
+    floatLabel: {{options.value.floatLabel}}
+</div>

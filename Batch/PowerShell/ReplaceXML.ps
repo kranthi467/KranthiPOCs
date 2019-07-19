@@ -1,0 +1,28 @@
+echo "replacing connectionString with $(nlogConnectionString)"
+echo "filepath $(nLogFilePath)"
+$paths = Get-ChildItem -Path $(nLogFilePath)
+$actualPath = $paths[0].FullName
+echo $actualPath
+
+$xml = [xml](Get-Content $actualPath)
+
+Select-Xml -xml $xml.nlog.targets -XPath "*" | foreach { 
+    if ($_.Node.Name -eq "database")
+    {
+        $_.Node.connectionString="$(nlogConnectionString)"
+      
+    }
+  }
+
+Select-Xml -xml $xml.nlog.rules -XPath "*" | foreach { if($_.node.Name -eq "*") { $_.node.WriteTo= "$(nLogTargets)" } }
+
+echo "updated file"
+
+$xml.save($actualPath)
+
+echo "Saved file"
+
+cat $actualPath
+
+
+echo "nlog changes are done"
