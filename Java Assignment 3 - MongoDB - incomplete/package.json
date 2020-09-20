@@ -15,7 +15,7 @@
     "cookie-parser": "^1.4.3",
     "express": "^4.16.1",
     "express-session": "^1.15.6",
-    "mongodb": "^2.2.31",
+    "mongodb": "^3.6.2",
     "mongoose": "^5.0.6",
     "pug": "^0.1.0"
   }
