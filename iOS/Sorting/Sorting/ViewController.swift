@@ -10,16 +10,61 @@ import UIKit
 
 class ViewController: UIViewController {
 
-        
+    @IBOutlet weak var type: UISegmentedControl!
+    @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var inputSortLabel: UILabel!
+    @IBOutlet weak var instructionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var intField: UITextField!
-    @IBOutlet weak var intSortLabel: UILabel!
-    @IBAction func sortIntegers(_ sender: Any) {
-        let input = intField.text!
+    
+    @IBAction func updateInstruction(_ sender: Any) {
+        var label = "Enter comma separated "
+               switch type.selectedSegmentIndex {
+               case 0:
+                   label = label + "integers:"
+               break
+               case 1:
+                   label = label + "strings:"
+                   break
+               case 2:
+                   label = label + "dates:"
+                   break
+               default:
+                   break
+               }
+        instructionLabel.text = label
+    }
+    
+    @IBAction func sortInputs(_ sender: Any) {
+        let input = inputField.text!
+        var output = "";
+        var label = "Enter comma separated "
+        switch type.selectedSegmentIndex {
+        case 0:
+            label = label + "integers:"
+            output = sortIntegers(input: input)
+        break
+        case 1:
+            label = label + "strings:"
+            output = sortStrings(input: input)
+            break
+        case 2:
+            label = label + "dates:"
+            output = sortDates(input: input)
+            break
+            
+        default:
+            break
+        }
+        
+        inputSortLabel.text = output
+    }
+    
+    func sortIntegers(input: String) -> String {
         var intArray: Array<Int> = Array()
         let stringArray = input.split(separator: ",")
         for str in stringArray
@@ -34,24 +79,18 @@ class ViewController: UIViewController {
         
         
         intArray.sort()
-        intSortLabel.text = intArray.description
+        return intArray.description
         
     }
     
-    @IBOutlet weak var stringField: UITextField!
-    @IBOutlet weak var stringSortLabel: UILabel!
-    @IBAction func sortStrings(_ sender: Any) {
-        let input = stringField.text!
+    func sortStrings(input: String) -> String {
         var stringArray = input.split(separator: ",")
         
         stringArray = stringArray.sorted { $0.lowercased() < $1.lowercased() }
-        stringSortLabel.text = stringArray.description
+        return stringArray.description
     }
     
-    @IBOutlet weak var datesField: UITextField!
-    @IBOutlet weak var datesSortLabel: UILabel!
-    @IBAction func sortDates(_ sender: Any) {
-         let input = datesField.text!
+    func sortDates(input: String) -> String {
                var intArray: Array<Date> = Array()
                let stringArray = input.split(separator: ",")
         let dateFormatter = DateFormatter()
@@ -73,5 +112,5 @@ class ViewController: UIViewController {
         for date in intArray {
             stringDates.append(dateFormatter.string(from: date))
         }
-               datesSortLabel.text = stringDates.description    }
+               return stringDates.description    }
 }
