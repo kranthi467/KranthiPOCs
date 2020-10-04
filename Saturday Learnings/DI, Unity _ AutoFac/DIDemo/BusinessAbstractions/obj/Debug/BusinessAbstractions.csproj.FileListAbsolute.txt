@@ -1,9 +1,0 @@
-E:\Training Demos\DIDemo\BusinessAbstractions\bin\Debug\BusinessAbstractions.dll
-E:\Training Demos\DIDemo\BusinessAbstractions\bin\Debug\BusinessAbstractions.pdb
-E:\Training Demos\DIDemo\BusinessAbstractions\bin\Debug\Entities.dll
-E:\Training Demos\DIDemo\BusinessAbstractions\bin\Debug\Entities.pdb
-E:\Training Demos\DIDemo\BusinessAbstractions\obj\Debug\BusinessAbstractions.csprojResolveAssemblyReference.cache
-E:\Training Demos\DIDemo\BusinessAbstractions\obj\Debug\BusinessAbstractions.dll
-E:\Training Demos\DIDemo\BusinessAbstractions\obj\Debug\BusinessAbstractions.pdb
-E:\Training Demos\DIDemo\BusinessAbstractions\bin\Debug\RepositoryAbstractions.dll
-E:\Training Demos\DIDemo\BusinessAbstractions\bin\Debug\RepositoryAbstractions.pdb

@@ -1,9 +1,0 @@
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\LogInApplication\Business\bin\Debug\Business.dll
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\LogInApplication\Business\bin\Debug\Business.pdb
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\LogInApplication\Business\bin\Debug\DataAccess.dll
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\LogInApplication\Business\bin\Debug\DataAccess.pdb
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\LogInApplication\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\LogInApplication\Business\obj\Debug\Business.dll
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\LogInApplication\Business\obj\Debug\Business.pdb
-C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\LogInApplication\Business\bin\Debug\Model.dll
-C:\Users\kranthi.ramasayam\Documents\Visual Studio 2015\Projects\LogInApplication\Business\bin\Debug\Model.pdb

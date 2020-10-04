@@ -1,7 +1,0 @@
-E:\Training Demos\DIDemo\RepositoryAbstractions\bin\Debug\RepositoryAbstractions.dll
-E:\Training Demos\DIDemo\RepositoryAbstractions\bin\Debug\RepositoryAbstractions.pdb
-E:\Training Demos\DIDemo\RepositoryAbstractions\bin\Debug\Entities.dll
-E:\Training Demos\DIDemo\RepositoryAbstractions\bin\Debug\Entities.pdb
-E:\Training Demos\DIDemo\RepositoryAbstractions\obj\Debug\RepositoryAbstractions.csprojResolveAssemblyReference.cache
-E:\Training Demos\DIDemo\RepositoryAbstractions\obj\Debug\RepositoryAbstractions.dll
-E:\Training Demos\DIDemo\RepositoryAbstractions\obj\Debug\RepositoryAbstractions.pdb

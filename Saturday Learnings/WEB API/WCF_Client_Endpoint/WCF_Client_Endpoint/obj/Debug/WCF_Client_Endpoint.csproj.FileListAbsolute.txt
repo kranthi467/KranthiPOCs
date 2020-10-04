@@ -1,1 +1,0 @@
-D:\Session Samples\WCF_Client_Endpoint\WCF_Client_Endpoint\bin\Debug\WCF_Client_Endpoint.exe.config

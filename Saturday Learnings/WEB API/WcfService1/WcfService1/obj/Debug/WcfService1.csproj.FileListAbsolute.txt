@@ -1,6 +1,0 @@
-D:\Session Samples\WcfService1\WcfService1\bin\WcfService1.dll.config
-D:\Session Samples\WcfService1\WcfService1\bin\WcfService1.dll
-D:\Session Samples\WcfService1\WcfService1\bin\WcfService1.pdb
-D:\Session Samples\WcfService1\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
-D:\Session Samples\WcfService1\WcfService1\obj\Debug\WcfService1.dll
-D:\Session Samples\WcfService1\WcfService1\obj\Debug\WcfService1.pdb

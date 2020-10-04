@@ -1,3 +1,0 @@
-C:\Users\kranthi.ramasayam\Desktop\LogSystemData\SeesionMoniterService\bin\Debug\LogSystemData.exe.config
-C:\Users\kranthi.ramasayam\Desktop\LogSystemData\SeesionMoniterService\obj\Debug\LogSystemData.exe
-C:\Users\kranthi.ramasayam\Desktop\LogSystemData\SeesionMoniterService\obj\Debug\LogSystemData.pdb

@@ -1,5 +1,0 @@
-E:\Training Demos\DIDemo\Entities\bin\Debug\Entities.dll
-E:\Training Demos\DIDemo\Entities\bin\Debug\Entities.pdb
-E:\Training Demos\DIDemo\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
-E:\Training Demos\DIDemo\Entities\obj\Debug\Entities.dll
-E:\Training Demos\DIDemo\Entities\obj\Debug\Entities.pdb

@@ -1,5 +1,0 @@
-C:\Users\kiran.singireddy\Documents\Visual Studio 2015\Projects\DesignPatterns\ComputerAbstructFactory\bin\Debug\ComputerAbstructFactory.exe.config
-C:\Users\kiran.singireddy\Documents\Visual Studio 2015\Projects\DesignPatterns\ComputerAbstructFactory\bin\Debug\ComputerAbstructFactory.exe
-C:\Users\kiran.singireddy\Documents\Visual Studio 2015\Projects\DesignPatterns\ComputerAbstructFactory\bin\Debug\ComputerAbstructFactory.pdb
-C:\Users\kiran.singireddy\Documents\Visual Studio 2015\Projects\DesignPatterns\ComputerAbstructFactory\obj\Debug\ComputerAbstructFactory.exe
-C:\Users\kiran.singireddy\Documents\Visual Studio 2015\Projects\DesignPatterns\ComputerAbstructFactory\obj\Debug\ComputerAbstructFactory.pdb

@@ -1,5 +1,0 @@
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\StratergyPattern\ChainOfResp\bin\Debug\ChainOfResp.exe.config
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\StratergyPattern\ChainOfResp\bin\Debug\ChainOfResp.exe
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\StratergyPattern\ChainOfResp\bin\Debug\ChainOfResp.pdb
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\StratergyPattern\ChainOfResp\obj\Debug\ChainOfResp.exe
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\StratergyPattern\ChainOfResp\obj\Debug\ChainOfResp.pdb

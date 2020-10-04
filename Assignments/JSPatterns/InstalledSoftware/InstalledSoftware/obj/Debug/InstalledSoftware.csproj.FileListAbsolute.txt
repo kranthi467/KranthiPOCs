@@ -1,5 +1,0 @@
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\InstalledSoftware\InstalledSoftware\bin\Debug\InstalledSoftware.exe.config
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\InstalledSoftware\InstalledSoftware\bin\Debug\InstalledSoftware.exe
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\InstalledSoftware\InstalledSoftware\bin\Debug\InstalledSoftware.pdb
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\InstalledSoftware\InstalledSoftware\obj\Debug\InstalledSoftware.exe
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\InstalledSoftware\InstalledSoftware\obj\Debug\InstalledSoftware.pdb

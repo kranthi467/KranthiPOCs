@@ -1,4 +1,0 @@
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\BasicWebService\bin\Debug\BasicWebService.dll
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\BasicWebService\bin\Debug\BasicWebService.pdb
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\BasicWebService\obj\Debug\BasicWebService.dll
-c:\users\kranthi.ramasayam\documents\visual studio 2015\Projects\WCFProject\BasicWebService\obj\Debug\BasicWebService.pdb

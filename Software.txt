@@ -1,2 +1,0 @@
-Docker Community Edition (CE) 
-Android Studio one

@@ -1,6 +1,0 @@
-c:\users\kiran.singireddy\documents\visual studio 2015\Projects\DesignPatterns\AbstructFactoryPattern\bin\Debug\AbstructFactoryPattern.exe.config
-c:\users\kiran.singireddy\documents\visual studio 2015\Projects\DesignPatterns\AbstructFactoryPattern\bin\Debug\AbstructFactoryPattern.exe
-c:\users\kiran.singireddy\documents\visual studio 2015\Projects\DesignPatterns\AbstructFactoryPattern\bin\Debug\AbstructFactoryPattern.pdb
-c:\users\kiran.singireddy\documents\visual studio 2015\Projects\DesignPatterns\AbstructFactoryPattern\obj\Debug\AbstructFactoryPattern.csprojResolveAssemblyReference.cache
-c:\users\kiran.singireddy\documents\visual studio 2015\Projects\DesignPatterns\AbstructFactoryPattern\obj\Debug\AbstructFactoryPattern.exe
-c:\users\kiran.singireddy\documents\visual studio 2015\Projects\DesignPatterns\AbstructFactoryPattern\obj\Debug\AbstructFactoryPattern.pdb
